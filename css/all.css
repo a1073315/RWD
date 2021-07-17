@@ -1,0 +1,347 @@
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* headerCSS */
+.header{
+    background-color: #f6f6f6;
+}
+.social-link{
+    float: right;
+    padding: 10px 20px;
+}
+.social-link li{
+    float: left;
+}
+.social-link img{
+    float: left;
+    margin: 3px;
+}
+.social-link a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #4460a0;
+}
+.social-link a:hover{
+    color: #0a2158;
+    font-weight: bolder;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu h1{
+    float: left;
+    padding-left: 10px;
+}
+.menu h1 a{
+    background-image: url("https://upload.cc/i1/2021/05/08/s2SBLF.png");
+    width: 170px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menubar{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menubar > li > a{
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+    color: #00cc99;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s;
+}
+.menubar a:hover{
+    color: #000;
+}
+@media (max-width:767px) {
+    .menu{
+        flex-direction: column;
+    }
+    .menu h1{
+        float: none;
+        margin: 15px auto;
+    }
+    .menubar{
+        padding-left: 2%;
+    }
+    .menubar > li{
+        width: 48%;
+        border: 2px solid lightgray;
+    }
+}
+.dropdown ul{
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+}
+.dropdown li a{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(75, 82, 88);
+    background-color: rgb(238, 238, 238);
+}
+@media (max-width:767px) {
+    .dropdown ul{
+        position: relative;
+    }
+    .dropdown li a{
+        margin: 0 auto;
+        width: 85%;
+    }
+}
+.menubar .active > a{
+    border-bottom: 2px solid lightgray;
+}
+.menubar .active a:hover{
+    font-weight: bolder;
+    border-bottom: 2px solid #00cc99;
+}
+
+
+/* bannerCSS */
+.banner{
+    width: 100%;
+    background-image: url("https://upload.cc/i1/2021/05/10/1Me4wT.jpg");
+    padding: 95px 0;
+    margin-bottom: 50px;
+}
+.banner-rect{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.banner-rect h2{
+    color: #fff;
+    padding: 32px 60px;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 1.3;
+}
+@media (max-width:767px) {
+    .banner-rect h2{
+        font-size: 20px;
+        padding: 45px 50px;
+    }
+}
+
+
+/* introCSS */
+.intro{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.intro li{
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 2px 2px 2px rgb(231, 231, 231);
+    border-radius: 3px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+.intro li img{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+.intro li h4{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.card3 li{
+    width: 100%;
+    list-style-type:disc;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+@media (max-width:767px){
+    .intro{
+        flex-direction: column;
+    }
+    .intro > li{
+        width: 80%;
+        margin: 10px auto;
+        padding: 10%;
+    }
+    .card3{
+        width: 80%;
+        padding-left: 20%;
+    }
+}
+.lb-dataContainer{
+    display: none !important;
+}
+
+
+/* vstable */
+table{
+    margin: 10px auto;
+    width: 90%;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+thead{
+    font-weight: bolder;
+    font-size: 27px;
+    color: rgb(65, 65, 65);
+    text-align: center;
+}
+.vstable th,.vstable td{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+.vstable th{
+    background-color: rgba(218, 218, 218, 0.918);
+    font-weight: bolder;
+    text-align: left;
+}
+.vstable td{
+    color: rgb(80, 80, 80);;
+}
+@media (max-width:767px) {
+    .contable{
+        overflow-x: auto;
+    }
+    table{
+        width: 530px;
+    }
+    .vstable th,.vstable td{
+        padding: 10px 5px;
+    }
+}
+
+
+/* form */
+form{
+    background: linear-gradient(#00654c,#009871);
+    padding: 20px;
+}
+form h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bolder;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.userform{
+    width: 100%;
+    display: flex;
+}
+textarea{
+    width: 35%;
+    height: 230px;
+    padding: 10px;
+    margin: 0 30px;
+    border-radius: 3px;
+}
+.form-infor{
+    width: 44%;
+    padding: 10px;
+}
+.form-infor li{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.form-infor input{
+    width: 97%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 4px;
+    caret-color: #009c75;
+    border: 3px solid transparent;
+}
+.form-infor input:focus{
+    border: 3px solid #00654c;
+}
+@media (max-width:485px) {
+    form h3{
+        font-size: 23px;
+    }
+    .form-infor{
+        width: 90%;
+    }
+    textarea{
+        display: none;
+    }
+}
+#button{
+    float: right;
+    width: 80px;
+    color: #fff;
+    text-align: center;
+    background-color: #00cc99;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+#button:hover{
+    color: #00654c;
+    font-weight: bolder;
+    background-color: #d1d1d1;
+}
+#button:active{
+    color: #eeff07;
+    background-color: #000000;
+}
+
+
+/* footer */
+.footer{
+    padding: 25px 15px 60px 15px;
+}
+.connect-infor{
+    float: right;
+    line-height: 1.5;
+}
+.connect-infor a{
+    color: #e55995;
+    text-decoration: none;
+}
+.connect-infor a:hover{
+    color: #ad0000;
+    font-weight: bolder;
+}
+
+
+/* topCss */
+.top{
+    width: 60px;
+    height: 60px;
+    background-image: url("https://upload.cc/i1/2021/05/28/HYCn6l.png");
+    background-size: 100%;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+.top:hover{
+    width: 65px;
+    height: 65px;
+}
